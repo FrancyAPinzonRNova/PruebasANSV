@@ -1,0 +1,90 @@
+.main-cover-title {
+
+    h1 {
+        font-size: 2.35em;
+        font-family: "futura-pt-heavy";
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+
+    background: $purple-medium;
+    text-align: center;
+
+    .logo-container {
+        justify-content: center;
+        margin: 50px 0;
+    }
+
+    h1 {
+        color: $white;
+        line-height: 1;
+        margin: 10px 0;
+
+        &.small-text {
+            margin: 0;
+        }
+
+        small {
+            line-height: 1.2;
+            font-family: "futura-pt-book";
+            color: $blue-light;
+            font-size: 64%;
+            display: block;
+        }
+
+        &.microlesson-title {
+            font-family: "futura-pt-book";
+            font-size: 1.5em;
+            letter-spacing: 5px;
+        }
+    }
+
+    @media only screen and (min-width:768px) {
+
+        background: url("#{$images-path}/logos/bg_main_slide.jpg") no-repeat center center/ cover;
+        min-height: 70%;
+        text-align: left;
+
+        h1 {
+            text-shadow: 0 0 5px $black;
+        }
+
+        .logo-container {
+            margin: 0;
+            justify-content: flex-start;
+        }
+
+    }
+}
+
+.main-cover-footer {
+    .hashtag-container {
+        background-color: $purple-light;
+
+        @media only screen and (min-width:768px) {
+            background-color: transparent;
+        }
+    }
+
+    .cover-hashtag {
+        color: $white;
+        font-family: "futura-pt-book";
+        margin: 0;
+
+        @media only screen and (min-width:768px) {
+            color: $purple-medium;
+        }
+    }
+
+    .button-container {
+        background-color: $gray-light;
+
+        @media only screen and (min-width:768px) {
+            background-color: transparent;
+        }
+    }
+}

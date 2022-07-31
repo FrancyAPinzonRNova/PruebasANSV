@@ -1,0 +1,35 @@
+/*----------------------------------
+---------------Variables------------
+------------------------------------*/
+$images-path: "../resources/images/"; //
+$fonts-path: "../resources/fonts/"; //
+$audios-path: "../resources/audio/"; //
+// -------------------------------
+// Main Colors
+$white: #ffffff !default;
+$black: #000000 !default;
+
+$blue-light: #00b8e6;
+$blue-dark: #071e4b;
+
+$purple-light: #4E57A3;
+$purple-medium: #2D2F69;
+$purple-dark: #1B1D3C;
+
+$orange-light: #F0765A;
+$orange-medium: #EE3E23;
+$orange-dark: #D41C02;
+
+$yellow-light: #F8D94F;
+$yellow-medium: #FDB300;
+$yellow-dark: #F78900;
+
+$green-light: #61E394;
+$green-medium: #22C668;
+$green-dark: #009F51;
+
+$gray-light: #E6E8EF;
+
+//--Activities
+$red-wrong: $orange-medium;
+$green-right: $green-medium;

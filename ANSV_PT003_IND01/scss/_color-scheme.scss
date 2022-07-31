@@ -1,0 +1,175 @@
+.bg-orange-gradient {
+    background: conic-gradient($white 0deg 90deg, $orange-medium 90deg 270deg, $white 270deg 360deg);
+
+    @media (min-width: 768px) {
+        background: conic-gradient($orange-medium 0deg 180deg, $white 180deg 360deg);
+    }
+}
+
+.bg-green-gradient {
+    background: conic-gradient($white 0deg 90deg, $green-medium 90deg 270deg, $white 270deg 360deg);
+
+    @media (min-width: 768px) {
+        background: conic-gradient($green-medium 0deg 180deg, $white 180deg 360deg);
+    }
+}
+
+.bg-purple-gradient {
+    background: none;
+    @media (min-width: 768px) {
+        background: conic-gradient($purple-light 0deg 180deg, $white 180deg 360deg);
+    }
+}
+
+.bg-purple-gradient-none {
+    background: conic-gradient($white 0deg 90deg, $purple-light 90deg 270deg, $white 270deg 360deg);
+    @media (min-width: 768px) {
+        background: none;
+    }
+}
+
+.bg-yellow-gradient {
+    background: none;
+
+    @media (min-width: 768px) {
+        background: conic-gradient($yellow-medium 0deg 180deg, $white 180deg 360deg);
+    }
+}
+
+.bg-yellow-gradient-none {
+    background: conic-gradient($white 0deg 90deg, $yellow-medium 90deg 270deg, $white 270deg 360deg);
+
+    @media (min-width: 768px) {
+        background: none;
+    }
+}
+
+
+//----------
+.bg-white {
+    background-color: $white  !important;
+}
+
+.bg-black {
+    background-color: $black  !important;
+}
+
+.bg-blue-light {
+    background-color: $blue-light  !important;
+}
+
+.bg-blue-dark {
+    background-color: $blue-dark  !important;
+}
+
+.bg-purple-light {
+    background-color: $purple-light  !important;
+}
+
+.bg-purple-medium {
+    background-color: $purple-medium  !important;
+}
+
+.bg-purple-dark {
+    background-color: $purple-dark  !important;
+}
+
+.bg-orange-light {
+    background-color: $orange-light  !important;
+}
+
+.bg-orange-medium {
+    background-color: $orange-medium  !important;
+}
+
+.bg-orange-dark {
+    background-color: $orange-dark  !important;
+}
+
+.bg-yellow-light {
+    background-color: $yellow-light  !important;
+}
+
+.bg-yellow-medium {
+    background-color: $yellow-medium  !important;
+}
+
+.bg-yellow-dark {
+    background-color: $yellow-dark  !important;
+}
+
+.bg-green-light {
+    background-color: $green-light  !important;
+}
+
+.bg-green-medium {
+    background-color: $green-medium  !important;
+}
+
+.bg-green-dark {
+    background-color: $green-dark  !important;
+}
+
+.text-white {
+    color: $white  !important;
+}
+
+.text-black {
+    color: $black  !important;
+}
+
+.text-blue-light {
+    color: $blue-light  !important;
+}
+
+.text-blue-dark {
+    color: $blue-dark  !important;
+}
+
+.text-purple-light {
+    color: $purple-light  !important;
+}
+
+.text-purple-medium {
+    color: $purple-medium  !important;
+}
+
+.text-purple-dark {
+    color: $purple-dark  !important;
+}
+
+.text-orange-light {
+    color: $orange-light  !important;
+}
+
+.text-orange-medium {
+    color: $orange-medium  !important;
+}
+
+.text-orange-dark {
+    color: $orange-dark  !important;
+}
+
+.text-yellow-light {
+    color: $yellow-light  !important;
+}
+
+.text-yellow-medium {
+    color: $yellow-medium  !important;
+}
+
+.text-yellow-dark {
+    color: $yellow-dark  !important;
+}
+
+.text-green-light {
+    color: $green-light  !important;
+}
+
+.text-green-medium {
+    color: $green-medium  !important;
+}
+
+.text-green-dark {
+    color: $green-dark  !important;
+}

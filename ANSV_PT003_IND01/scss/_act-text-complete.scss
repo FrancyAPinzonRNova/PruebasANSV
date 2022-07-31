@@ -1,0 +1,77 @@
+/*----------------------------------
+------------Text-Complete-----------
+------------------------------------*/
+.complete-text-activity {
+  #incompleteText {
+    .activity-field {
+      display: inline-block;
+      width: auto;
+      background: white;
+      text-align: center;
+      padding: 5px 0.5em;
+      min-width: 200px;
+      border: 2px solid $blue-dark;
+      border-radius: 5px;
+      color: transparent;
+      margin: 0 10px 20px;
+
+      &.selected {
+        background-color: rgba($blue-dark, 0.2);
+        transition: all 0.25s;
+      }
+
+      &.full {
+        background: white;
+        color: $blue-dark;
+        cursor: pointer;
+      }
+
+      &.disabled {
+        pointer-events: none;
+      }
+
+      &.incorrect {
+        background-color: rgba($orange-medium, 0.2);
+        color: $orange-medium;
+        font-weight: 700;
+
+        &[data-answer="0"] {
+          color: transparent;
+        }
+      }
+
+      &.correct {
+        background-color: rgba($green-medium, 0.2);
+        color: $green-medium;
+        font-weight: 700;
+      }
+    }
+  }
+
+  #textButtonOptions {
+    .activity-button {
+      &.disabled {
+        pointer-events: none;
+      }
+    }
+
+    [id*="buttonContainer_"] {
+      transition: all 0.3s;
+
+      &.disabled {
+        height: 0;
+        max-width: 0;
+        padding: 0;
+
+        [id*="textBtn_"] {
+          transition: all 0.3s;
+          width: 0;
+          padding: 0;
+          height: 0;
+          border: none;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

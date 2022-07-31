@@ -1,0 +1,116 @@
+/*----------------------------------
+----------------Modal--------------
+------------------------------------*/
+
+.modal-open {
+    overflow: auto;
+    padding-right: 0 !important;
+}
+
+.modal-backdrop {
+    &.show {
+        background-color: $blue-dark;
+        opacity: 0.8;
+    }
+}
+
+.contentModal {
+    .modal-dialog {
+        .modal-content {
+            background: none;
+            border: none;
+
+            .modal-body {
+                position: relative;
+                padding: 0;
+
+                .close {
+                    background: none;
+                    border: none;
+                    opacity: 1;
+                    width: 2.5em;
+                    height: 2.5em;
+                    align-items: center;
+                    padding: 0.5em;
+                }
+            }
+        }
+    }
+}
+
+.contentModal2 {
+
+    .modal-dialog {
+        .modal-content {
+            background: none;
+            border: none;
+
+            .modal-body {
+                color: $white;
+                line-height: 1.1;
+                text-align: center;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: $blue-dark;
+
+                .close-end{
+                    display: flex;
+                    justify-content: end;
+                }
+                .btn-close-modal {
+                    background-color: transparent;
+                    border: none;
+                }
+            
+                .close {
+                    color: $white  !important;
+                    font-size: 2.3rem;
+                    opacity: 1;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.activityModal {
+    .modal-dialog {
+        .modal-content {
+            background: none;
+            border: none;
+
+            .modal-body {
+                position: relative;
+                padding: 0;
+
+                .close {
+                    background: none;
+                    border: none;
+                    opacity: 1;
+                    width: 2.5em;
+                    height: 2.5em;
+                    align-items: center;
+                    padding: 0.5em;
+                    top: 0em;
+                    right: 0.5em;
+
+                    &:hover,
+                    &:focus,
+                    &:focus-visible {
+                        transform: scale(1.05);
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .modal-dialog {
+        max-width: 82%;
+    }
+}

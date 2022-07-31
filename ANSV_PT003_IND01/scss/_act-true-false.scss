@@ -1,0 +1,77 @@
+/*----------------------------------
+-------True-Or-False-Activity-------
+------------------------------------*/
+
+.true-false-activity {
+
+    .true-false-question {
+        p {
+            margin-bottom: 0;
+            color: $white;
+        }
+    }
+
+    [id^="sentence_"] {
+        background-color: $ultralight;
+        border-radius: 1em;
+
+        .sentence {
+            border-radius: 1em;
+
+            p {
+                margin-bottom: 0;
+                color: $dark  !important;
+            }
+        }
+
+        .signs-container {
+            border-radius: 1em;
+
+            .letter {
+                color: $dark  !important;
+                font-family: 'gill-sans-bold';
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .answer-sign {
+                cursor: pointer;
+                width: 100%;
+                height: auto;
+
+                &.disabled {
+                    user-select: none;
+                    pointer-events: none;
+                    opacity: 0.7;
+                }
+
+                &.true,
+                &.false {
+                    .check-space {
+                        margin: 0 auto;
+                        width: 2rem;
+                        height: 2rem;
+                        transition: 0.2s all;
+                        background: url("#{$images-path}btn_tf_unselected.svg") no-repeat center center/contain;
+                    }
+
+                    &.selected {
+                        .check-space {
+                            background: url("#{$images-path}btn_tf_selected.svg") no-repeat center center/contain;
+
+                            &.correct {
+                                background: url("#{$images-path}btn_tf_success.svg") no-repeat center center/contain !important;
+                            }
+
+                            &.incorrect {
+                                background: url("#{$images-path}btn_tf_error.svg") no-repeat center center/contain !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

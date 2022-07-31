@@ -1,0 +1,66 @@
+/*----------------------------------
+---------------Header-------------
+------------------------------------*/
+
+header,
+footer {
+  z-index: 10;
+
+  .navbar {
+    background-color: $purple-medium;
+    padding: 0.5em 0;
+    flex-wrap: nowrap;
+
+    .breadcrumb {
+      margin-bottom: 0;
+      padding-right: 0.5em;
+
+      .breadcrumb-item {
+        font-family: 'akzidenz-grotesk-regular';
+        display: none;
+        font-size: 1rem;
+        color: $blue-light;
+
+        a {
+          text-decoration: none;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: $blue-light;
+
+          &:hover {
+            color: $white;
+          }
+        }
+
+        &:last-child {
+          display: flex;
+
+
+          &::before {
+            display: none;
+          }
+        }
+
+        @media (min-width: 768px) {
+          display: flex;
+
+          &+.breadcrumb-item {
+
+            &::before {
+              color: $blue-light;
+              display: flex;
+              content: '❯';
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-nav {
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

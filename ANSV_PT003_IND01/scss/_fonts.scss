@@ -1,0 +1,44 @@
+/*----------------------------------
+-----------------Fonts--------------
+------------------------------------*/
+@font-face {
+    font-family: 'akzidenz-grotesk-condensed-bold';
+    font-style: normal;
+    font-weight: 900;
+    src: url("#{$fonts-path}akzidenzgrotesk/akzidenz-grotesk-condensed-bold.otf");
+}
+
+@font-face {
+    font-family: 'akzidenz-grotesk-bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url("#{$fonts-path}akzidenzgrotesk/akzidenz-grotesk-bold.ttf");
+}
+
+@font-face {
+    font-family: 'akzidenz-grotesk-italic';
+    font-style: italic;
+    font-weight: 400;
+    src: url("#{$fonts-path}akzidenzgrotesk/akzidenz-grotesk-italic.ttf");
+}
+
+@font-face {
+    font-family: 'akzidenz-grotesk-regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url("#{$fonts-path}akzidenzgrotesk/akzidenz-grotesk-regular.ttf");
+}
+
+@font-face {
+    font-family: 'futura-pt-book';
+    font-style: normal;
+    font-weight: 700;
+    src: url("#{$fonts-path}futura/futura-pt-book.otf");
+}
+
+@font-face {
+    font-family: 'futura-pt-heavy';
+    font-style: normal;
+    font-weight: 700;
+    src: url("#{$fonts-path}futura/futura-pt-heavy.otf");
+}

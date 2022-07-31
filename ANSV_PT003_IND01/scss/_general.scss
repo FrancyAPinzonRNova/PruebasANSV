@@ -1,0 +1,100 @@
+/*----------------------------------
+----------------General--------------
+------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'akzidenz-grotesk-regular';
+    margin: 0;
+    overscroll-behavior: contain;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: $blue-dark;
+    background-color: $purple-medium;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.disable {
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.main-slide {
+    display: none;
+}
+
+.main-slide.current {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+.slideshow-container {
+    padding: 0;
+    max-width: 1920px;
+}
+
+.rounded {
+    border-radius: 0.5em !important
+}
+
+.rounded-start {
+    border-radius: 0.5em 0 0 0.5em !important;
+}
+
+.rounded-end {
+    border-radius: 0 0.5em 0.5em 0 !important;
+}
+
+.shadow {
+    box-shadow: 0.2em 0.2em 0.3em 0 rgba($black, 0.3) !important;
+}
+
+.shadow-img {
+    filter: drop-shadow(0.2em 0.2em 0.3em rgba($black, 0.3));
+}
+
+.rounded-pill-left {
+    border-radius: 50rem 0 0 50rem;
+}
+
+.rounded-pill-right {
+    border-radius: 0 50rem 50rem 0;
+}
+
+.rounded-top {
+    border-radius: 1em 1em 0 0 !important;
+}
+
+.rounded-bottom {
+    border-radius: 0 0 1em 1em !important;
+}
+
+.top-separator {
+    height: 2px;
+    opacity: 1;
+}
+
+.left-separator {
+    width: 2px;
+    opacity: 1;
+}
+
+.h-md-33 {
+    min-height: 33.33%;
+}
+
+.img-size{
+    width: auto;
+    @media (min-width: 768px) {
+        width: 80%
+    };
+}

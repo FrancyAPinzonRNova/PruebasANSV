@@ -1,0 +1,22 @@
+.audioPlayer-container {
+  background-color: $blue-dark;
+  padding-right: 0px;
+
+  .audio-icon {
+    display: inline;
+
+    img {
+      padding: 0;
+    }
+  }
+
+  .audio-Player {
+    background-color: $blue-light;
+    line-height: 0;
+    padding: 0.5em;
+  }
+
+  audio {
+    width: 100%;
+  }
+}

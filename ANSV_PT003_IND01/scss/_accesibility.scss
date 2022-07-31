@@ -1,0 +1,140 @@
+/*-----------------------------------
+-------------Accesibility------------
+------------------------------------*/
+
+.btn-accesibility {
+    background-color: $blue-dark;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+        background-color: $blue-light;
+    }
+}
+
+.main-slide-container {
+    display: block !important;
+    position: relative;
+
+    .accesibility-btn-toggle {
+        position: absolute;
+        right: 0px;
+        top: 10px;
+    }
+
+    .accesibility-menu {
+        right: -5px !important;
+        top: 70px !important;
+
+    }
+
+    .speechPlayer-container {
+        right: -5px !important;
+        top: 70px !important;
+    }
+}
+
+.accesibility-container {
+    display: none;
+    z-index: 1;
+
+    .accesibility-menu {
+        position: absolute;
+        right: 5px;
+        top: 80px;
+        width: 60px;
+
+        .accesibility-options {
+            display: none;
+
+            .btn-read {
+                display: none;
+            }
+
+            .btn-accesibility-option {
+                background-color: $blue-light;
+                color: $white;
+                border-radius: 5%;
+                padding: 0;
+                margin: 0;
+                width: 50px;
+                height: 50px;
+
+                &:hover {
+                    background-color: $purple-light;
+                }
+
+                &:focus {
+                    background-color: $purple-light;
+                }
+            }
+        }
+    }
+
+    .speechPlayer-container {
+        position: absolute;
+        right: 10px;
+        top: 80px;
+        width: 60px;
+        display: none;
+
+        .speechPlayer-menu {
+            .btn-speechPlayer {
+                padding: 10px;
+                width: 50px;
+                height: 50px;
+                border-radius: 0;
+                background-color: $blue-light;
+
+                img {
+                    vertical-align: baseline;
+                }
+
+                &:hover {
+                    background-color: $purple-light;
+                }
+
+                &:focus {
+                    background-color: $purple-light;
+                }
+            }
+
+            .disable {
+                background-color: $gray-light;
+                opacity: 1;
+            }
+
+            .btn-pauseText {
+                display: none;
+            }
+        }
+    }
+}
+
+.readerHighlight {
+    text-decoration: underline;
+    text-decoration-color: $orange-medium;
+}
+
+/*color themes*/
+
+.highContrast {
+    filter: invert(100%);
+    background-color: $black;
+}
+
+.highContrastHalfColor {
+    filter: invert(100%) hue-rotate(180deg);
+    background-color: $black;
+}
+
+.highContrastHalfColorBright {
+    filter: invert(100%) hue-rotate(180deg) brightness(4);
+    background-color: $black;
+}
+
+.grayScale {
+    filter: grayscale(1);
+}

@@ -1,0 +1,47 @@
+/*----------------------------------
+------------Check-Activity-----------
+------------------------------------*/
+.check-activity {
+
+    .checklist-question {
+        p {
+            margin-bottom: 0;
+            color: $white;
+        }
+    }
+
+    .form-check {
+        // cursor: pointer;
+        background-color: $ultralight;
+        color: $dark;
+        display: flex;
+        align-items: center;
+        border-radius: 1em;
+        margin-bottom: 0.5em;
+        padding: 0.5em 3em;
+
+        .form-check-input {
+            cursor: pointer;
+            width: 1.5rem;
+            height: 1.5rem;
+            border: 2px solid $dark;
+
+            &:checked {
+                background-color: $white;
+                background-image: url("#{$images-path}btn_modal_close.svg");
+                background-repeat: no-repeat;
+                background-size: 60%;
+                background-position: center;
+            }
+        }
+
+        .form-check-label {
+            cursor: pointer;
+
+            p {
+                margin-bottom: 0;
+                color: $main;
+            }
+        }
+    }
+}

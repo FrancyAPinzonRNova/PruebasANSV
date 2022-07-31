@@ -1,0 +1,116 @@
+/*----------------------------------
+----------------Buttons--------------
+------------------------------------*/
+.btn {
+    transition: transform .3s;
+    font-size: 1.25rem;
+    border: 2px solid $white;
+    // box-shadow: 0.3em 0.3em 0.5em 0.1em rgba($black, 0.3);
+    font-family: "akzidenz-grotesk-bold";
+    padding: 0.5em 1em;
+    border-radius: 50rem;
+    color: $white;
+
+    &.btn-green-dark {
+        background-color: $green-dark;
+
+        &:hover,
+        &:focus,
+        &:focus-visible {
+            color: $purple-dark;
+            background-color: $green-light;
+        }
+    }
+
+    &.btn-blue-dark {
+        background-color: $blue-dark;
+
+        &:hover,
+        &:focus,
+        &:focus-visible {
+            color: $purple-dark;
+            background-color: $blue-light;
+        }
+    }
+
+    &.btn-blue-light {
+        background-color: $blue-light;
+        color: $purple-dark;
+
+        &:hover,
+        &:focus,
+        &:focus-visible {
+            color: $white;
+            background-color: $blue-dark;
+        }
+    }
+
+    &.btn-purple-light {
+        background-color: $purple-light;
+
+        &:hover,
+        &:focus,
+        &:focus-visible {
+            color: $white;
+            background-color: $purple-dark;
+        }
+    }
+
+    &.btn-yellow-dark {
+        background-color: $yellow-dark;
+
+        &:hover,
+        &:focus,
+        &:focus-visible {
+            color: $purple-dark;
+            background-color: $yellow-light;
+        }
+    }
+
+    &.btn-yellow-light {
+        background-color: $yellow-light;
+        color: $purple-dark;
+
+        &:hover,
+        &:focus,
+        &:focus-visible {
+            color: $purple-dark;
+            background-color: $yellow-dark;
+        }
+    }
+
+    &.btn-lg {
+        font-size: 1.5rem;
+    }
+
+    &.btn-nav {
+        background-color: $purple-dark;
+        color: $white;
+        min-height: 50px;
+        min-width: 50px;
+        padding: 0;
+
+        &:hover,
+        &:focus,
+        &:focus-visible {
+            background-color: $blue-light;
+            color: $white;
+
+            &.disabled {
+                background-color: $gray-light  !important;
+                color: $black  !important;
+            }
+        }
+    }
+
+    &.disabled {
+        background-color: $gray-light  !important;
+        color: $black  !important;
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+        transform: scale(1.05);
+    }
+}

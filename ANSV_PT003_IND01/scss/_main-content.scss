@@ -1,0 +1,14 @@
+/*----------------------------------
+-------------Main Content-----------
+------------------------------------*/
+//Contenedor Slides
+.main-content {
+    background-color: $purple-medium;
+
+    .content {
+
+        min-height: calc(100vh - 100px);
+        //style here
+
+    }
+}

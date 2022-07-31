@@ -1,0 +1,86 @@
+/*----------------------------------
+--------Text Elements & Format------
+------------------------------------*/
+//text elements
+p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-family: 'akzidenz-grotesk-regular';
+
+    strong,
+    b {
+        font-family: 'akzidenz-grotesk-bold';
+    }
+
+    em,
+    i {
+        font-family: 'akzidenz-grotesk-italic';
+    }
+}
+
+small {
+    font-size: 1rem;
+}
+
+.bigfont {
+    font-size: 2rem !important;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-family: 'futura-pt-heavy';
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-family: 'futura-pt-book';
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-family: 'futura-pt-book';
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-family: 'futura-pt-book';
+}
+
+a {
+    color: $orange-medium;
+    text-decoration: underline;
+    overflow-wrap: break-word;
+
+    &:hover {
+        color: $green-medium;
+    }
+}
+
+ul {
+    font-size: 1.25rem;
+
+    li::marker {
+        color: $orange-medium;
+    }
+}
+
+
+ol {
+    font-size: 1.25rem;
+
+    li::marker {
+        font-weight: bold;
+        color: $orange-medium;
+    }
+}
+
+//french-indentation
+.f-dent {
+    margin-left: 1em;
+    text-indent: -1em;
+}
+
+.text-title {
+    font-size: 1.5rem;
+    font-family: 'akzidenz-grotesk-bold';
+}
